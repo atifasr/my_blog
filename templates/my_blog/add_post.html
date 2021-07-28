@@ -1,0 +1,19 @@
+{% extends "learning_logs/base.html" %} {% block content %}
+<h1 class="display-5">Add an article</h1>
+<form action="" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="topic_name">Topic on?</label>
+    <input name="article_name" type="text" />
+    <select name="topic_name" id="cars">
+      {% for val in choices %}
+      <option value="{{val.name}}">{{ val }}</option>
+      {% endfor %}
+    </select>
+    <textarea cols="30" rows="10" class="form-control" name="text">
+{{ text }}</textarea
+    >
+    <input type="file" id="myFile" name="picture" />
+  </div>
+  <button type="submit" class="btn btn-dark" value="send">Submit</button>
+</form>
+{% endblock %}

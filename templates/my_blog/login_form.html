@@ -1,0 +1,36 @@
+{% extends "base/base.html" %} {% load static %}{% block content %}
+<link rel="stylesheet" href="{% static 'login_addpost.css' %}" />
+<div class="form-group">
+  <form action="" class="form-control" method="POST" id="msform">
+    <fieldset>
+      <h1>Login</h1>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"
+          ><span class="glyphicon glyphicon-user"> </span
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          name="username"
+        />
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"
+          ><span class="glyphicon glyphicon-lock"> </span
+        ></span>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          placeholder="•••••••••••"
+        />
+      </div>
+      <br />
+      <input type="submit" class="btn btn-success" />
+    </fieldset>
+  </form>
+</div>
+
+{% endblock content %}

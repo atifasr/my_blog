@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.cards_contain {
+  display: flex;
+  flex: auto;
+}
+
+.card {
+  width: 20vw;
+  height: 40vh;
+  box-shadow: 5px 5px 5px 5px rgb(165, 170, 165);
+  margin: 2%;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+}

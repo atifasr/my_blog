@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'article.css' %}" />
+
+<div class="container-fluid">
+
+
+    <div class="row">
+      <div class="col-12 contain">
+        <article class="contain">
+          <b >{{entry.topic.article_name.name}} </b>
+          <b class="art_name">{{entry.topic.name}} </b>
+          <small>created by :{{entry.user.username}} </small>
+          <small>{{entry.date_added}}</small>
+          
+          <p class="article_text">
+            <img class="entry_image" src="{{entry.get_photo_url}}" alt="">{{entry.text}}</p>
+            
+          </article>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

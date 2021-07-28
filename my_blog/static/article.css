@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.base {
+  margin: auto;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  border-radius: 2%;
+}
+
+.art_name {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vw;
+  text-transform: capitalize;
+
+  text-align: center;
+}
+
+.article_text {
+  width: 80vw;
+  align-self: center;
+  background-color: rgb(214, 210, 210);
+  border-radius: 5%;
+  padding: 3%;
+  font-weight: bolder;
+}
+
+.entry_image {
+  width: 30vw;
+  height: 50vh;
+  border-radius: 40%;
+  float: left;
+  margin: 0 15px 0 0;
+}

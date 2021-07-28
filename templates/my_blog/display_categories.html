@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %} {% load static%} {% block content %}
+<link rel="stylesheet" href="{% static 'categories.css' %}" />
+<div class="row">
+  <div class="col-12 cards_contain">
+    {% for val in categories%}
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap" />
+      <div class="card-body" href="#">
+        <a href=""><h5 class="card-title">{{val.name}}</h5></a>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock%}
